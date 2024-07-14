@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Trend Dashboard</title>
+</head>
+<body>
+    <h1>Fashion Trend Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Trend Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row.feature }}</td>
+                <td>{{ row.trend_score }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
